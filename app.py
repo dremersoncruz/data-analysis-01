@@ -13,7 +13,7 @@ st.write("Envie um arquivo contendo os dados para análise.")
 # Orientações para o usuário
 
 st.info("""
-📄 Orientações para o arquivo de dados
+📄 Orientações para a formatção correta do arquivo de dados
 
 \\>>> Utilize um arquivo no formato `.txt`.  
 \\>>> Insira apenas valores numéricos.  
