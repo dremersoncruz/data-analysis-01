@@ -19,13 +19,14 @@ st.info("""
 >>> Insira apenas valores numéricos.  
 >>> Coloque um único valor em cada linha.  
 >>> Não utilize títulos, nomes de variáveis ou outros textos.  
->>>Linhas vazias serão ignoradas.
+>>> Linhas vazias serão ignoradas.
 
 Exemplo:
+
     7
     5
     10
-   """)
+""")
 
 arquivo = st.file_uploader(
     "Selecione o arquivo de dados",
