@@ -82,9 +82,9 @@ if arquivo is not None:
     Desvpadp = Variancia**0.5
 
     if MAS != 0:
-    Desvpadp100 = 100*Desvpadp/MAS
+        Desvpadp100 = 100*Desvpadp/MAS
     else:
-    Desvpadp100 = None
+        Desvpadp100 = None
 
 
     # ==========================================
