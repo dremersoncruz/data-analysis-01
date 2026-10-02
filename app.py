@@ -77,6 +77,7 @@ if arquivo is not None:
     # ==========================================
 
     Desvpadp = Variancia**0.5
+    Desvpadp100 = 100*Desvpadp/MAS
 
 
     # ==========================================
@@ -121,6 +122,7 @@ if arquivo is not None:
     st.write(f"Moda = {Moda}")
     st.write(f"Variância = {Variancia:.2f}")
     st.write(f"Desvio padrão populacional = {Desvpadp:.2f}")
+    st.write(f"Desvio padrão populacional percentual = {Desvpadp100:.2f}")
 
 
     # ==========================================
