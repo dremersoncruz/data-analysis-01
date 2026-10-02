@@ -125,7 +125,7 @@ for x in dados:
     st.write(f"Número de dados = {N}")
     st.write(f"Média Aritmética Simples = {MAS:.2f}")
     st.write(f"Mediana = {Mediana:.2f}")
-    st.write(f"Moda = {Moda}")
+    st.write(f"Moda = {Modas}")
     st.write(f"Variância = {Variancia:.2f}")
     st.write(f"Desvio padrão populacional = {Desvpadp:.2f}")
     st.write(f"Desvio padrão populacional percentual = {Desvpadp100:.2f}%")
