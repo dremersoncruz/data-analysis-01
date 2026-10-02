@@ -146,6 +146,6 @@ if arquivo is not None:
     ax.set_xlabel("Nota")
     ax.set_ylabel("Frequência")
     ax.set_xticks(range(11))
-    ax.set_title("Distribuição das notas")
+    ax.set_title("Distribuição de frequências")
 
     st.pyplot(fig)
