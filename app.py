@@ -99,16 +99,15 @@ if arquivo is not None:
     # ==========================================
 
     maior_frequencia = 0
-    Moda = 0
+Moda = None
 
-    for nota in range(11):
+for x in dados:
 
-        frequencia = dados.count(nota)
+    frequencia = dados.count(x)
 
-        if frequencia > maior_frequencia:
-            maior_frequencia = frequencia
-            Moda = nota
-
+    if frequencia > maior_frequencia:
+        maior_frequencia = frequencia
+        Moda = x
 
     # ==========================================
     # RESULTADOS
@@ -131,21 +130,16 @@ if arquivo is not None:
 
     st.subheader("Histograma")
 
-    fig, ax = plt.subplots()
+  fig, ax = plt.subplots()
 
-    ax.hist(
-        dados,
-        bins=[
-            -0.5, 0.5, 1.5, 2.5, 3.5,
-            4.5, 5.5, 6.5, 7.5, 8.5,
-            9.5, 10.5
-        ],
-        rwidth=0.8
-    )
+ax.hist(
+    dados,
+    bins="auto",
+    rwidth=0.9
+)
 
-    ax.set_xlabel("Nota")
-    ax.set_ylabel("Frequência")
-    ax.set_xticks(range(11))
-    ax.set_title("Distribuição de frequências")
+ax.set_xlabel("Valor")
+ax.set_ylabel("Frequência")
+ax.set_title("Distribuição de frequências")
 
-    st.pyplot(fig)
+st.pyplot(fig)
