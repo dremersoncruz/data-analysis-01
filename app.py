@@ -128,18 +128,18 @@ for x in dados:
     # HISTOGRAMA
     # ==========================================
 
-    st.subheader("Histograma")
+    st.subheader("Distribuição de frequências")
 
-  fig, ax = plt.subplots()
+    fig, ax = plt.subplots()
 
-ax.hist(
-    dados,
-    bins="auto",
-    rwidth=0.9
-)
+    ax.hist(
+        dados,
+        bins="auto",
+        rwidth=0.9
+    )
 
-ax.set_xlabel("Valor")
-ax.set_ylabel("Frequência")
-ax.set_title("Distribuição de frequências")
+    ax.set_xlabel("Valor")
+    ax.set_ylabel("Frequência")
+    ax.set_title("Distribuição de frequências")
 
-st.pyplot(fig)
+    st.pyplot(fig)
