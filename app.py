@@ -122,7 +122,7 @@ if arquivo is not None:
     st.write(f"Moda = {Moda}")
     st.write(f"Variância = {Variancia:.2f}")
     st.write(f"Desvio padrão populacional = {Desvpadp:.2f}")
-    st.write(f"Desvio padrão populacional percentual = {Desvpadp100:.2f}")
+    st.write(f"Desvio padrão populacional percentual = {Desvpadp100:.2f}%")
 
 
     # ==========================================
