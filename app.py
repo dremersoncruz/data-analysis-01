@@ -3,6 +3,9 @@
 # FRONTEND
 # ==========================================
 
+import streamlit as st
+import matplotlib.pyplot as plt
+
 st.title("Análise Estatística de Dados")
 
 st.write("Envie um arquivo contendo os dados para análise.")
