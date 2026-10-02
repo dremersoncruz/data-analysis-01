@@ -94,20 +94,27 @@ if arquivo is not None:
         Mediana = dados_ordenados[N//2]
 
 
-    # ==========================================
-    # CÁLCULO DA MODA
-    # ==========================================
+# ==========================================
+# CÁLCULO DA MODA
+# ==========================================
 
-    maior_frequencia = 0
-Moda = None
+maior_frequencia = 0
 
 for x in dados:
-
     frequencia = dados.count(x)
 
     if frequencia > maior_frequencia:
         maior_frequencia = frequencia
-        Moda = x
+
+
+Modas = []
+
+for x in dados:
+
+    if dados.count(x) == maior_frequencia:
+
+        if x not in Modas:
+            Modas.append(x)
 
     # ==========================================
     # RESULTADOS
