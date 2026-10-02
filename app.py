@@ -12,23 +12,23 @@ st.write("Envie um arquivo contendo os dados para análise.")
 
 # Orientações para o usuário
 
-st.info(""" Olá!
+st.info("""
 📄 Orientações para o arquivo de dados
 
-• Utilize um arquivo no formato .txt.
-• Insira apenas valores numéricos.
-• Coloque um único valor em cada linha.
-• Não utilize títulos, nomes de variáveis ou outros textos.
-• Linhas vazias serão ignoradas.
+Utilize um arquivo no formato `.txt`.  
+Insira apenas valores numéricos.  
+Coloque um único valor em cada linha.  
+Não utilize títulos, nomes de variáveis ou outros textos.  
+Linhas vazias serão ignoradas.
 
 Exemplo de arquivo válido:
 
-7
-5
-10
-3
-8
-6
+    7
+    5
+    10
+    3
+    8
+    6
 """)
 
 arquivo = st.file_uploader(
